@@ -14,61 +14,65 @@
         <h1 id="outroTitle"></h1>
         <p id="outroScore"></p>
         <div class="outro-buttons">
-            <button onclick="window.location.pathname = ''">Back</button>
+            <button onclick="window.location.pathname = 'rock-scissors-paper/'">Back</button>
             <button onclick="window.location.reload()">Replay</button>
         </div>
     </div>
     <div class="wrapper">
         <form class="button-back" action="../">
             <h1 id="title"></h1>
-            <button type="submit">Back</button>
-            <button type="button" id="switchColor">Switch color</button>
-        </form>
-        <div class="play-board">
-            <div class="player-desk">
-                <section class="sign">
-                    <img id="scissorsOpponent" src="../images/Scissors Green.png" alt="Scissors">
-                    <img id="rockOpponent" src="../images/Rock Green.png" alt="Rock">
-                    <img id="paperOpponent" src="../images/Paper Green.png" alt="Paper">
-                </section>
+            <div class="button-back-buttons">
+                <button type="submit">Back</button>
+                <button type="button" id="switchColor">Switch color</button>
             </div>
-            <div class="table">
-                <section class="choose-sign">
-                    <img id="scissorsImgOpponent" src="../images/Scissors Green.png" alt="Scissors">
-                    <img id="rockImgOpponent" src="../images/Rock Green.png" alt="rock">
-                    <img id="paperImgOpponent" src="../images/Paper Green.png" alt="Paper"></section>
-                <section class="choose-sign">
-                    <img id="scissorsImg" src="../images/Scissors Blue.png" alt="Scissors">
-                    <img id="rockImg" src="../images/Rock Blue.png" alt="rock">
-                    <img id="paperImg" src="../images/Paper Blue.png" alt="Paper">
-                </section>
-                <div class="table-background">
-                    <img src="../images/Star.png" alt="">
-                    <h3 id="action" class="table-background-title"></h3>
+        </form>
+        <div class="boards">
+            <div class="play-board">
+                <div class="player-desk">
+                    <section class="sign">
+                        <img id="scissorsOpponent" src="../images/Scissors Green.png" alt="Scissors">
+                        <img id="rockOpponent" src="../images/Rock Green.png" alt="Rock">
+                        <img id="paperOpponent" src="../images/Paper Green.png" alt="Paper">
+                    </section>
+                </div>
+                <div class="table">
+                    <section class="choose-sign">
+                        <img id="scissorsImgOpponent" src="../images/Scissors Green.png" alt="Scissors">
+                        <img id="rockImgOpponent" src="../images/Rock Green.png" alt="rock">
+                        <img id="paperImgOpponent" src="../images/Paper Green.png" alt="Paper"></section>
+                    <section class="choose-sign">
+                        <img id="scissorsImg" src="../images/Scissors Blue.png" alt="Scissors">
+                        <img id="rockImg" src="../images/Rock Blue.png" alt="rock">
+                        <img id="paperImg" src="../images/Paper Blue.png" alt="Paper">
+                    </section>
+                    <div class="table-background">
+                        <img src="../images/Star.png" alt="">
+                        <h3 id="action" class="table-background-title"></h3>
+                    </div>
+                </div>
+                <div class="player-desk">
+                    <section class="sign">
+                        <img id="scissors" src="../images/Scissors Blue.png" alt="Scissors">
+                        <img id="rock" src="../images/Rock Blue.png" alt="Rock">
+                        <img id="paper" src="../images/Paper Blue.png" alt="Paper">
+                    </section>
                 </div>
             </div>
-            <div class="player-desk">
-                <section class="sign">
-                    <img id="scissors" src="../images/Scissors Blue.png" alt="Scissors">
-                    <img id="rock" src="../images/Rock Blue.png" alt="Rock">
-                    <img id="paper" src="../images/Paper Blue.png" alt="Paper">
-                </section>
-            </div>
-        </div>
-        <div class="score-board">
-            <div class="score-desk">
-                <section class="player-score">
-                    <h2 id="opponentScore" class="player-score-num">0</h2>
-                    <p class="player-score-title">pts</p>
-                </section>
-                <hr>
-                <section class="player-score">
-                    <h2 id="score" class="player-score-num">0</h2>
-                    <p class="player-score-title">pts</p>
-                </section>
-            </div>
-            <div class="win-end" id="winner">
-                <img src="../images/Crown.png" alt="">
+            <div class="score-board">
+                <div class="score-desk">
+                    <section class="player-score">
+                        <h2 id="opponentScore" class="player-score-num">0</h2>
+                        <p class="player-score-title">pts</p>
+                    </section>
+                    <hr>
+                    <section class="player-score">
+                        <h2 id="score" class="player-score-num">0</h2>
+                        <p class="player-score-title">pts</p>
+                    </section>
+                </div>
+                <div class="win-end" id="winner">
+                    <img src="../images/Crown.png" alt="">
+                </div>
             </div>
         </div>
     </div>
